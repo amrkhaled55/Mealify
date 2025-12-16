@@ -1,0 +1,64 @@
+body:has(.icon input:checked){
+    background-color: hsl( 0 , 0% , 9% );
+   }
+   body:not(:has(:target)):has(.icon input:checked) .home-link,
+body:has(.home:target):has(.icon input:checked) .home-link,
+body:has(.chefs:target):has(.icon input:checked) .chefs-link,
+body:has(.gallery:target):has(.icon input:checked) .gallery-link,
+body:has(.contact:target):has(.icon input:checked) .contact-link 
+{
+ color: #fff !important ;
+}
+   body:has(.icon input:checked) .nav-bar{
+       background-color: hsl( 0 , 0% , 9% );
+       box-shadow: 0px 0px 14px 0px #0000001b;
+   }
+   body:has(.icon input:checked) .icon .dark{
+    display: block;
+    color: #fff;
+}
+body:has(.icon input:checked) .icon .light{
+    display: none;
+    color: #fff;
+}
+   body:has(.icon input:checked) .navbar .nav-list  a{
+    color: #9f9f9f;
+   }
+   body:has(.icon input:checked) .navbar h3 span{
+    color: #D78C23;
+   }
+   body:has(.icon input:checked) .navbar .lists li a::before{
+    background-color: #D78C23;
+   }
+     body:has(.icon input:checked) .navbar .container .nav-list .lists li a:hover{
+        color: #fff;
+     } 
+   body:has(.icon input:checked) #home{
+       background-color: #252525;
+      }
+      body:has(.icon input:checked) #home h1{
+      color: #fff;
+      }
+      body:has(.icon input:checked) #home .btn1{
+       background-color: #D78C23;
+       color: hsl( 0 , 0% , 9% );
+       }
+       body:has(.icon input:checked) #home .btn2{
+        color: #fff;
+       }
+       body:has(.icon input:checked) #home .icons{
+        background: linear-gradient(to right,#D78C23 30% , transparent 30%);
+       }
+       body:has(.icon input:checked) #home .icons::before{
+        background-color: #171717;
+       }
+       body:has(.icon input:checked) #home .icons i{
+        background-color: #171717;
+       }
+   body:has(.icon input:checked) #chefs{
+       background-color: #252525;
+      }body:has(.icon input:checked) #gallery{
+       background-color: #252525;
+      }body:has(.icon input:checked) #contact{
+       background-color: #252525;
+      }
