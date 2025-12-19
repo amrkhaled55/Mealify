@@ -7,6 +7,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 ::selection{
   background-color: #e06a6a;
 }
@@ -18,9 +19,16 @@ body {
   font-family: "Open Sans", sans-serif;
   /* scroll-behavior: smooth; */
 }
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px !important;
+    line-height: 1.2;
+  }
+}
 .container {
-  width: 90%;
   margin: auto;
+    max-width: 1200px;
+  padding-inline: 15px;
 }
 .main-title {
   text-align: center;
@@ -183,6 +191,8 @@ body:has(.navLink:target) .nav-bar ul li {
     padding-block: 10px;
   }
 }
+
+
 /* start header */
 .home {
   background-color: #eeeeee;
@@ -267,10 +277,10 @@ body:has(.navLink:target) .nav-bar ul li {
 }
 .home-img {
   /* background-color: blue; */
-  width: 35%;
+  width: 45%;
 }
 .home-img img {
-  width: 100%;
+  width: 80%;
   filter: drop-shadow(4px 4px 10px #000a);
 }
 .home-img img:hover {
@@ -335,6 +345,12 @@ body:has(.navLink:target) .nav-bar ul li {
     margin-left: 0px;
   }
 }
+@media (max-width: 576px) {
+  #home .container {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}
 /* end media */
 /* end header */
 /* start chefs */
@@ -361,11 +377,7 @@ body:has(.navLink:target) .nav-bar ul li {
 
 .items .chefs-details:hover {
   scale: 1.06;
-}
-picture,
-img {
-  display: block;
-}
+} 
 .chefs .items .chefs-details picture {
   position: relative;
 }
@@ -581,11 +593,20 @@ img {
   font-family: inherit;
   font-size: 15px;
 }
+.contact .the-map {
+    width: 100%;
+  aspect-ratio: 16 / 9;   /* نسبة ثابتة */
+  overflow: hidden;
+  border-radius: 10px;
+}
+.contact .the-map iframe{
+    width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
 /* start media */
 @media (max-width: 1200px) {
-  .contact .the-map iframe {
-    width: 550px;
-  }
   .contact .contact-details .items {
     width: 100%;
     padding-inline: 10px;
@@ -714,7 +735,7 @@ img {
 /* start media */
 @media (max-width: 1200px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .footer .foot-detls1,
   .footer .foot-detls2,
